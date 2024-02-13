@@ -1,0 +1,25 @@
+function Prime(a)
+{
+  let count = 0;
+
+  for(let i=2;i<=a;i++)
+    {
+      if(a%i==0)
+      {
+        count++;
+      }
+    }
+  if(count>2)
+  {
+    console.log('Not a Prime Number');
+  }
+  else if(count===0)
+  {
+    console.log('Neither Prime Nor Composite');
+  }
+  else
+  {
+    console.log('Prime Number');
+  }
+}
+Prime(2);
